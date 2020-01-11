@@ -9,8 +9,8 @@ public class JoystickDrive extends CommandBase {
 
     private static final int kLeftJoystickChannel = 0;
     private Joystick m_LeftStick;
-    
-    public JoystickDrive(Drivetrain subsytem, double forward, double rotation, double zAxis){
+
+    public JoystickDrive(Drivetrain subsytem){
         m_Drivetrain = subsytem;
         addRequirements(m_Drivetrain);
         m_LeftStick = new Joystick(kLeftJoystickChannel);
