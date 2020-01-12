@@ -12,6 +12,10 @@ public class Shoot extends CommandBase {
     }
 
     public void execute(){
-        
+        m_Shooter.startMotor();
+    }
+
+    public void end(){
+        m_Shooter.stopMotor();
     }
 }
